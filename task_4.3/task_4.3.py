@@ -4,7 +4,13 @@
 # - 3 -> 11
 # - 2 -> 10
 
-x = 2
-y = str(bin(x))
-print(y[2:])
+# x = 2
+# y = str(bin(x))
+# print(y[2:])
 
+a = int(input('введите число для перевода = '))
+b = ''
+while a != 0:
+   b = str(a % 2) + b
+   a = a // 2 
+print(b)
